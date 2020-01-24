@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Лабораторная работа №2 - Определитель для разреженной структурно-симметричной матрицы</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="lib/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/det.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="condition">
+                <h2>Условие задачи</h2>
+                <p>Дана разреженная структурно симметричная матрица. Найти её определитель.</p>
+                <p>Разреженная матрица это матрица, у которой большая часть элементов равна нулю.</p>
+                <p>Структурно-симметричная матрица это матрица в которой если элементы A[i, j] ≠ 0, то и A[j, i] ≠ 0 и A[i, j] = 0, то и A[j, i] = 0, т.е. элементы матрицы симметричны относительно главной диагонали (A[i, j] = A[j, i])</p>
+            </div>
+            <div id="input">
+                <h2>Входные параметры</h2>
+                <p><label>Число строк: <input id="row" type="number"></label></p>
+                <p><label>Число столбцов: <input id="col" type="number"></label></p>
+                <div id="det">
+                    <p>Введите число строк и столбцов в соответствующие текстовые поля.</p>
+                </div>
+            </div>
+            <div id="output">
+                <h2>Выходные параметры</h2>
+                <p id="answer">Входные параметры не введены...</p>
+            </div>
+        </div>
+    </body>
+</html>
